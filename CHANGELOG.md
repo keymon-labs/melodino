@@ -5,6 +5,18 @@ All notable changes to Melodino will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Bluetooth MIDI keyboards: tap the MIDI pill to connect over Web Bluetooth (Chrome), no OS pairing step needed. Includes a BLE-MIDI packet parser (running status, SysEx skipped)
+- Language auto-detect from the browser's ordered language list; new "Auto" choice in Settings (now the default)
+- English translations for the UI chrome (menus, settings, parent area, break reminder, offline banner); speech voice follows the language
+
+### Fixed
+- Free-play octave label showed "Do4" while the keyboard started at octave 3
+- Missing "connected" string in the MIDI screen-reader announcement
+- Service worker cache bumped to `melodino-v7`
+
 ## [1.2.0] - 2026-03-28
 
 ### Added
