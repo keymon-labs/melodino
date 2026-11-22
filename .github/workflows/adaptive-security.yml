@@ -57,7 +57,8 @@ jobs:
   # ─── Socket.dev: zero-day supply chain (typosquatting, postinstall, obfuscation)
   socket-scan:
     name: Socket Supply Chain
-    if: github.event_name == 'pull_request'
+    # TODO: disabled on the fork, SocketDev/socket-security-action does not exist
+    if: false
     runs-on: ubuntu-latest
     continue-on-error: true  # Job-level: don't block workflow if Socket.dev app not installed
     steps:
