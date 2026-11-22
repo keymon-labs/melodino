@@ -8,7 +8,7 @@ test.describe('Accessibility', () => {
 
   test('page has lang attribute', async ({ page }) => {
     const lang = await page.locator('html').getAttribute('lang');
-    expect(lang).toBe('fr');
+    expect(lang).toBe('fr'); // playwright.config.js pins locale fr-FR
   });
 
   test('skip link exists and is focusable', async ({ page }) => {

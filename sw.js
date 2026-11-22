@@ -2,7 +2,7 @@
 // Cache-first, self-hosted assets, COPPA compliant
 // Fallback CDN for soundfont resilience
 
-const CACHE_NAME = 'melodino-v6';
+const CACHE_NAME = 'melodino-v7';
 const ASSETS = [
   './',
   './index.html',
