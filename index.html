@@ -374,7 +374,7 @@ body.focus .s-stars, body.focus .s-meta { display: none; }
 </style>
 </head>
 <body>
-<a class="skip" href="#main-content">Aller au contenu</a>
+<a class="skip" href="#main-content" data-i18n="skip">Aller au contenu</a>
 <!-- Live region for screen readers -->
 <div id="aria-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
@@ -382,19 +382,19 @@ body.focus .s-stars, body.focus .s-meta { display: none; }
 <div id="splash">
   <div class="logo">🎹</div>
   <h1>Melodino</h1>
-  <p class="tagline">Apprends le piano en t'amusant !</p>
-  <button class="btn btn-gold btn-lg" id="go">▶ Commencer</button>
-  <p class="sub">🎹 Compatible ROLI LUMI &amp; claviers MIDI</p>
-  <a href="privacy.html" style="color:var(--dim);font-size:11px;margin-top:8px;text-decoration:underline">Politique de confidentialité</a>
+  <p class="tagline" data-i18n="tagline">Apprends le piano en t'amusant !</p>
+  <button class="btn btn-gold btn-lg" id="go" data-i18n="start">▶ Commencer</button>
+  <p class="sub" data-i18n="compat">🎹 Compatible ROLI LUMI &amp; claviers MIDI (USB ou Bluetooth)</p>
+  <a href="privacy.html" style="color:var(--dim);font-size:11px;margin-top:8px;text-decoration:underline" data-i18n="privacy">Politique de confidentialité</a>
 </div>
 
 <!-- ═══ BREAK REMINDER ═══ -->
 <div class="break-ov" id="breakov">
   <span style="font-size:64px">😴</span>
-  <h2 style="font-family:var(--fh);font-weight:900;font-size:24px;color:var(--text)">Petite pause ?</h2>
+  <h2 style="font-family:var(--fh);font-weight:900;font-size:24px;color:var(--text)" data-i18n="break_t">Petite pause ?</h2>
   <p style="color:var(--muted);max-width:300px;text-align:center" id="breakmsg">Tu joues depuis un moment. Tes yeux et tes doigts ont besoin de repos !</p>
-  <button class="btn btn-p btn-lg" id="breakcont">Continuer à jouer</button>
-  <button class="btn btn-s" id="breakstop">Arrêter pour aujourd'hui</button>
+  <button class="btn btn-p btn-lg" id="breakcont" data-i18n="keep">Continuer à jouer</button>
+  <button class="btn btn-s" id="breakstop" data-i18n="stop_day">Arrêter pour aujourd'hui</button>
 </div>
 
 <!-- ═══ HEADER ═══ -->
@@ -415,7 +415,7 @@ body.focus .s-stars, body.focus .s-meta { display: none; }
   <section class="scr" id="login">
     <span style="font-size:56px">🎹</span>
     <h1 style="font-family:var(--fh);font-weight:900;font-size:clamp(26px,5vw,44px);background:linear-gradient(135deg,#a78bfa,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Melodino</h1>
-    <p style="color:var(--muted);font-size:17px" id="lsub">Qui joue aujourd'hui ?</p>
+    <p style="color:var(--muted);font-size:17px" id="lsub" data-i18n="who">Qui joue aujourd'hui ?</p>
     <div class="av-grid" id="avg"></div>
   </section>
 
@@ -451,29 +451,29 @@ body.focus .s-stars, body.focus .s-meta { display: none; }
   </section>
 
   <section class="scr" id="settings">
-    <h2 style="font-family:var(--fh);font-weight:900;font-size:22px;margin-bottom:12px">Réglages</h2>
+    <h2 style="font-family:var(--fh);font-weight:900;font-size:22px;margin-bottom:12px" data-i18n="settings">Réglages</h2>
     <div class="st-grp" id="stw"></div>
   </section>
 
   <section class="scr" id="parent">
     <div class="pin-ov" id="pov">
       <span style="font-size:44px">🔒</span>
-      <h2 style="font-family:var(--fh);font-weight:800;font-size:20px">Code parent</h2>
+      <h2 style="font-family:var(--fh);font-weight:800;font-size:20px" data-i18n="parent_code">Code parent</h2>
       <div style="display:flex;gap:8px" id="piw"></div>
       <p id="perr" style="color:var(--red);font-size:13px" class="hidden"></p>
     </div>
     <div id="pcnt" class="hidden" style="width:100%;max-width:480px;display:flex;flex-direction:column;gap:20px;align-items:center">
-      <h2 style="font-family:var(--fh);font-weight:900;font-size:22px">Espace Parent</h2>
+      <h2 style="font-family:var(--fh);font-weight:900;font-size:22px" data-i18n="parent_area">Espace Parent</h2>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:100%">
-        <div style="background:var(--surface);border-radius:12px;padding:20px;text-align:center"><div class="st-num" id="ps1">0</div><div class="st-lab">Morceaux</div></div>
-        <div style="background:var(--surface);border-radius:12px;padding:20px;text-align:center"><div class="st-num" id="ps2">0</div><div class="st-lab">Étoiles</div></div>
-        <div style="background:var(--surface);border-radius:12px;padding:20px;text-align:center"><div class="st-num" id="ps3">0%</div><div class="st-lab">Précision</div></div>
+        <div style="background:var(--surface);border-radius:12px;padding:20px;text-align:center"><div class="st-num" id="ps1">0</div><div class="st-lab" data-i18n="songs">Morceaux</div></div>
+        <div style="background:var(--surface);border-radius:12px;padding:20px;text-align:center"><div class="st-num" id="ps2">0</div><div class="st-lab" data-i18n="stars">Étoiles</div></div>
+        <div style="background:var(--surface);border-radius:12px;padding:20px;text-align:center"><div class="st-num" id="ps3">0%</div><div class="st-lab" data-i18n="accuracy">Précision</div></div>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
-        <button class="btn btn-s btn-sm" id="bex">📥 Exporter</button>
-        <button class="btn btn-s btn-sm" id="bim">📤 Importer</button>
-        <button class="btn btn-s btn-sm" onclick="window.print()">🖨️ Imprimer</button>
-        <button class="btn btn-g btn-sm" id="pbk">← Retour</button>
+        <button class="btn btn-s btn-sm" id="bex" data-i18n="export">📥 Exporter</button>
+        <button class="btn btn-s btn-sm" id="bim" data-i18n="import">📤 Importer</button>
+        <button class="btn btn-s btn-sm" onclick="window.print()" data-i18n="print">🖨️ Imprimer</button>
+        <button class="btn btn-g btn-sm" id="pbk" data-i18n="back_arrow">← Retour</button>
       </div>
       <input type="file" id="ifile" accept=".json" class="hidden">
     </div>
@@ -482,9 +482,9 @@ body.focus .s-stars, body.focus .s-meta { display: none; }
 
 <!-- ═══ NAV ═══ -->
 <nav class="nav" id="nav" style="display:none">
-  <button class="nav-btn on" data-s="home"><span class="ico">🏠</span><span class="lbl">Accueil</span></button>
-  <button class="nav-btn" data-s="freeplay"><span class="ico">🎹</span><span class="lbl">Libre</span></button>
-  <button class="nav-btn" data-s="settings"><span class="ico">⚙️</span><span class="lbl">Réglages</span></button>
+  <button class="nav-btn on" data-s="home"><span class="ico">🏠</span><span class="lbl" data-i18n="home">Accueil</span></button>
+  <button class="nav-btn" data-s="freeplay"><span class="ico">🎹</span><span class="lbl" data-i18n="free">Libre</span></button>
+  <button class="nav-btn" data-s="settings"><span class="ico">⚙️</span><span class="lbl" data-i18n="settings">Réglages</span></button>
 </nav>
 
 <!-- ═══ CELEBRATION ═══ -->
@@ -493,7 +493,7 @@ body.focus .s-stars, body.focus .s-meta { display: none; }
   <h2 class="cel-t" id="cet"></h2>
   <p class="cel-s" id="ces"></p>
   <div class="cel-st" id="cst"></div>
-  <button class="btn btn-p btn-lg" id="cgo">Continuer</button>
+  <button class="btn btn-p btn-lg" id="cgo" data-i18n="cont">Continuer</button>
 </div></div>
 
 <script>
@@ -502,11 +502,24 @@ body.focus .s-stars, body.focus .s-meta { display: none; }
 /* ================================================================
    PART 0 — i18n + Solfege
    ================================================================ */
-const T={fr:{who:'Qui joue aujourd\'hui ?',add:'Ajouter',bravo:'Bravo !',fantastic:'Fantastique !',almost:'Presque !',correct:'correct',score:'Score',back:'Retour',world:'Monde',locked:'Verrouillé',need:'Il faut {n} étoiles',w1:'Premiers pas',w2:'Deux mains',w3:'Plus de notes',w4:'Classiques',pin_wrong:'Code incorrect',disconnected:'Non connecté'},
-en:{who:'Who\'s playing?',add:'Add',bravo:'Bravo!',fantastic:'Fantastic!',almost:'Almost!',correct:'correct',score:'Score',back:'Back',world:'World',locked:'Locked',need:'Need {n} stars',w1:'First steps',w2:'Two hands',w3:'More notes',w4:'Classics',pin_wrong:'Wrong PIN',disconnected:'Disconnected'}};
-let LG=navigator.language.startsWith('en')?'en':'fr';
+const T={fr:{who:'Qui joue aujourd\'hui ?',add:'Ajouter',bravo:'Bravo !',fantastic:'Fantastique !',almost:'Presque !',correct:'correct',score:'Score',back:'Retour',world:'Monde',locked:'Verrouillé',need:'Il faut {n} étoiles',w1:'Premiers pas',w2:'Deux mains',w3:'Plus de notes',w4:'Classiques',pin_wrong:'Code incorrect',disconnected:'Non connecté',skip:'Aller au contenu',tagline:'Apprends le piano en t\'amusant !',start:'▶ Commencer',compat:'🎹 Compatible ROLI LUMI & claviers MIDI (USB ou Bluetooth)',privacy:'Politique de confidentialité',break_t:'Petite pause ?',break_msg:'Tu joues depuis {n} minutes. Tes yeux et tes doigts ont besoin de repos !',break_wait:'Tu joues depuis un moment. Tes yeux et tes doigts ont besoin de repos !',keep:'Continuer à jouer',stop_day:'Arrêter pour aujourd\'hui',settings:'Réglages',home:'Accueil',free:'Libre',parent_code:'Code parent',parent_area:'Espace Parent',songs:'Morceaux',stars:'Étoiles',accuracy:'Précision',export:'📥 Exporter',import:'📤 Importer',print:'🖨️ Imprimer',back_arrow:'← Retour',cont:'Continuer',name:'Prénom',age:'Âge',years:'{n} ans',create:'Créer',cancel:'Annuler',play:'▶ Jouer',play_aria:'Jouer {s}',listen_aria:'Écouter {s}',no_badges:'Aucun badge pour le moment',lang:'Langue',lang_auto:'Auto (navigateur)',volume:'Volume',cb:'Mode daltonien',rm:'Animations réduites',dys:'Police dyslexie',focus:'Mode focus',latency:'Calibration MIDI (ms)',fs:'Plein écran',hello:'Bonjour {n} !',offline:'⚡ Mode hors ligne — tout fonctionne !',import_bad:'Fichier invalide',connected:'connecté',bt_connect:'Connecter Bluetooth',bt_title:'Connecter un clavier MIDI Bluetooth',bt_off:'Déconnecter le Bluetooth',bt_fail:'Connexion Bluetooth impossible',midi_unsupported:'Non supporté',midi_unsupported_title:'Web MIDI non disponible sur ce navigateur (utilise Chrome)'},
+en:{who:'Who\'s playing?',add:'Add',bravo:'Bravo!',fantastic:'Fantastic!',almost:'Almost!',correct:'correct',score:'Score',back:'Back',world:'World',locked:'Locked',need:'Need {n} stars',w1:'First steps',w2:'Two hands',w3:'More notes',w4:'Classics',pin_wrong:'Wrong PIN',disconnected:'Disconnected',skip:'Skip to content',tagline:'Learn piano the fun way!',start:'▶ Start',compat:'🎹 Works with ROLI LUMI & MIDI keyboards (USB or Bluetooth)',privacy:'Privacy policy',break_t:'Time for a break?',break_msg:'You\'ve been playing for {n} minutes. Your eyes and fingers need a rest!',break_wait:'You\'ve been playing for a while. Your eyes and fingers need a rest!',keep:'Keep playing',stop_day:'Stop for today',settings:'Settings',home:'Home',free:'Free play',parent_code:'Parent code',parent_area:'Parent area',songs:'Songs',stars:'Stars',accuracy:'Accuracy',export:'📥 Export',import:'📤 Import',print:'🖨️ Print',back_arrow:'← Back',cont:'Continue',name:'First name',age:'Age',years:'{n} years old',create:'Create',cancel:'Cancel',play:'▶ Play',play_aria:'Play {s}',listen_aria:'Listen to {s}',no_badges:'No badges yet',lang:'Language',lang_auto:'Auto (browser)',volume:'Volume',cb:'Colour-blind mode',rm:'Reduced motion',dys:'Dyslexia font',focus:'Focus mode',latency:'MIDI calibration (ms)',fs:'Full screen',hello:'Hello {n}!',offline:'⚡ Offline mode — everything still works!',import_bad:'Invalid file',connected:'connected',bt_connect:'Connect Bluetooth',bt_title:'Connect a Bluetooth MIDI keyboard',bt_off:'Disconnect Bluetooth',bt_fail:'Could not connect over Bluetooth',midi_unsupported:'Not supported',midi_unsupported_title:'Web MIDI is not available in this browser (use Chrome)'}};
+/* pure:start */
+/* Pick the first supported language from the browser's ordered preference list; fall back to French (the app's original default). */
+function detectLang(prefs,supported=['fr','en'],fallback='fr'){
+  for(const tag of prefs||[]){const p=String(tag).toLowerCase().split(/[-_]/)[0];if(supported.includes(p))return p}
+  return fallback}
+/* pure:end */
+let LG=detectLang(navigator.languages?.length?navigator.languages:[navigator.language]);
 function t(k,v){let s=T[LG]?.[k]||T.fr[k]||k;if(v)Object.entries(v).forEach(([a,b])=>{s=s.replace(`{${a}}`,b)});return s}
 const SOL={C:'Do',D:'Ré',E:'Mi',F:'Fa',G:'Sol',A:'La',B:'Si'};
+/* Static markup: data-i18n -> textContent, data-i18n-ph -> placeholder. Called on load and whenever the language changes. */
+function applyLang(){
+  document.documentElement.lang=LG;
+  document.querySelectorAll('[data-i18n]').forEach(e=>{e.textContent=t(e.dataset.i18n)});
+  const p=document.getElementById('breakmsg');if(p&&!p.dataset.n)p.textContent=t('break_wait');
+  if(typeof Mid!=='undefined')Mid.upill()}
+function setLang(){LG=CFG.lang==='auto'?detectLang(navigator.languages?.length?navigator.languages:[navigator.language]):CFG.lang;_fv=null;applyLang()}
 function nd(n){const l=n.replace(/[0-9#b]/g,''),r=n.replace(l,'');return LG==='fr'&&SOL[l]?SOL[l]+r:n}
 
 /* ================================================================
@@ -581,11 +594,55 @@ const Aud=(()=>{
 /* ================================================================
    PART 3 — MIDI
    ================================================================ */
+/* pure:start */
+/* BLE-MIDI packet parser (MIDI over Bluetooth LE). Stateful: running status and SysEx can span packets.
+   parse(bytes) -> [[status,d1,d2],...]; SysEx and real-time bytes are skipped.
+   shortcut: a status byte with no timestamp before it is only recognised when no running status is active; upgrade if a device needs it. */
+function createBleMidiParser(){
+  let run=0,msg=[],need=0,sysex=false,ts=false;   // ts: previous byte was a timestamp
+  const dataLen=st=>st<0xF0?((st&0xF0)===0xC0||(st&0xF0)===0xD0?1:2):st===0xF2?2:(st===0xF1||st===0xF3)?1:0;
+  return{parse(b){
+    const out=[];ts=false;
+    for(let i=1;i<b.length;i++){                       // b[0] is the packet header
+      const x=b[i];
+      if(x>=0xF8)continue;                             // real-time byte (or timestamp that looks like one)
+      if(x===0xF7){sysex=false;ts=false;continue}
+      if(x>=0x80){
+        const nx=b[i+1];
+        if(nx===undefined)continue;
+        if(!ts&&(nx>=0x80||(run&&!msg.length&&!sysex&&x<0xF0))){ts=true;continue}   // timestamp byte
+        ts=false;
+        if(x===0xF0){sysex=true;run=0;msg=[];continue}
+        run=x<0xF0?x:0;msg=[x];need=dataLen(x);
+        if(!need){out.push([x,0,0]);msg=[]}
+      }else{
+        ts=false;if(sysex)continue;
+        if(!msg.length){if(!run)continue;msg=[run];need=dataLen(run)}
+        msg.push(x);
+        if(msg.length>need){out.push([msg[0],msg[1],msg[2]||0]);msg=[]}
+      }
+    }
+    return out}}}
+/* pure:end */
 const Mid=(()=>{
-  let acc,inp,out,dn,lumi=false;const onN=[],offN=[];
+  let acc,inp,out,dn,lumi=false,ble=null;const onN=[],offN=[];
+  const BLE_SVC='03b80e5a-ede8-4b33-a751-6ce34ec4c700',BLE_CHR='7772e5db-3868-4112-a1a9-f2669d106bf3';
   const NN=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
   function m2n(n){return{note:NN[n%12],oct:Math.floor(n/12)-1,full:NN[n%12]+(Math.floor(n/12)-1),midi:n}}
   function hm(e){const[s,n,v]=e.data,c=s&0xF0,i=m2n(n);if(c===0x90&&v>0)onN.forEach(cb=>cb({...i,vel:v}));else if(c===0x80||(c===0x90&&v===0))offN.forEach(cb=>cb({...i,vel:0}))}
+  /* Web Bluetooth path: works on Chrome (Android, desktop) without pairing the keyboard in OS settings first. Must be called from a tap. */
+  async function connectBle(){
+    if(!navigator.bluetooth)return;
+    try{
+      const dev=await navigator.bluetooth.requestDevice({filters:[{services:[BLE_SVC]}]});
+      dev.addEventListener('gattserverdisconnected',()=>{if(ble&&ble.dev===dev){ble=null;upill();if(typeof announce==='function')announce('🎹 '+t('disconnected'))}});
+      const ch=await(await(await dev.gatt.connect()).getPrimaryService(BLE_SVC)).getCharacteristic(BLE_CHR),ps=createBleMidiParser();
+      ch.addEventListener('characteristicvaluechanged',e=>{const v=e.target.value;ps.parse(new Uint8Array(v.buffer,v.byteOffset,v.byteLength)).forEach(m=>hm({data:m}))});
+      await ch.startNotifications();
+      ble={dev};upill();if(typeof announce==='function')announce('🎹 '+(dev.name||'Bluetooth')+' '+t('connected'))
+    }catch(e){if(e.name!=='NotFoundError'){if(typeof ErrLog!=='undefined')ErrLog.log('midi','ble-fail',e.message);if(typeof announce==='function')announce(t('bt_fail'))}}  // NotFoundError = chooser dismissed
+  }
+  function pillTap(){if(ble){const d=ble.dev;ble=null;d.gatt.disconnect();upill()}else if(!dn)connectBle()}
   async function init(){
     if(!navigator.requestMIDIAccess)return;
     try{acc=await navigator.requestMIDIAccess({sysex:true})}catch{try{acc=await navigator.requestMIDIAccess({sysex:false})}catch{return}}
@@ -601,7 +658,7 @@ const Mid=(()=>{
     for(const i of acc.inputs.values()){if(i.name.toLowerCase().includes('lumi')){best=i;lumi=true;break}}
     if(!best){const f=acc.inputs.values().next().value;if(f)best=f}
     for(const o of acc.outputs.values()){if(o.name.toLowerCase().includes('lumi')){out=o;break}}
-    if(best){if(inp)inp.onmidimessage=null;inp=best;inp.onmidimessage=hm;dn=best.name;
+    if(best){if(inp)inp.onmidimessage=null;inp=best;inp.onmidimessage=e=>{if(!ble)hm(e)};dn=best.name;
       if(lumi&&out){setTimeout(()=>{
         Lumi.send(out,Lumi.octave(0));Lumi.send(out,Lumi.cmode(1));
         Lumi.send(out,Lumi.color(0,'#7C3AED'));Lumi.send(out,Lumi.bright(80));
@@ -613,8 +670,13 @@ const Mid=(()=>{
         else{Lumi.send(out,Lumi.sensitivity(80));Lumi.send(out,Lumi.fixedVel(false))}
       },300)}
     }else{inp=null;dn=null}upill()}
-  function upill(){const p=document.getElementById('mpill');if(!p)return;if(dn){p.className='midi-pill midi-on';p.textContent='🎹 '+(lumi?'LUMI':dn)}else if(!navigator.requestMIDIAccess){p.className='midi-pill midi-off';p.textContent='🎹 Non supporté';p.title='Web MIDI non disponible sur ce navigateur (Safari/Firefox)'}else{p.className='midi-pill midi-off';p.textContent='🎹 '+t('disconnected')}}
-  return{init,onN,offN,out:()=>out,lumi:()=>lumi,upill}
+  function upill(){const p=document.getElementById('mpill');if(!p)return;const bn=ble?ble.dev.name||'Bluetooth':null,name=bn||dn;
+    if(name){p.className='midi-pill midi-on';p.textContent='🎹 '+(!bn&&lumi?'LUMI':name);p.title=bn?t('bt_off'):''}
+    else if(navigator.bluetooth){p.className='midi-pill midi-off';p.textContent='🎹 '+t('bt_connect');p.title=t('bt_title')}
+    else if(!navigator.requestMIDIAccess){p.className='midi-pill midi-off';p.textContent='🎹 '+t('midi_unsupported');p.title=t('midi_unsupported_title')}
+    else{p.className='midi-pill midi-off';p.textContent='🎹 '+t('disconnected');p.title=''}
+    p.setAttribute('aria-label',p.title||p.textContent)}
+  return{init,onN,offN,out:()=>out,lumi:()=>lumi,upill,pillTap}
 })();
 
 /* ================================================================
@@ -852,9 +914,9 @@ function newP(){
   const g=document.getElementById('avg');
   const existing=g.querySelector('.pf-form');if(existing)return;
   const f=document.createElement('div');f.className='pf-form';
-  f.innerHTML=`<input type="text" id="pf-nm" placeholder="Prénom" maxlength="20" autocomplete="off" autofocus>
-    <select id="pf-age"><option value="">Âge</option>${[5,6,7,8,9,10,11,12].map(a=>`<option value="${a}">${a} ans</option>`).join('')}</select>
-    <div style="display:flex;gap:8px"><button class="btn btn-p btn-sm" id="pf-ok">Créer</button><button class="btn btn-g btn-sm" id="pf-no">Annuler</button></div>`;
+  f.innerHTML=`<input type="text" id="pf-nm" placeholder="${t('name')}" maxlength="20" autocomplete="off" autofocus>
+    <select id="pf-age"><option value="">${t('age')}</option>${[5,6,7,8,9,10,11,12].map(a=>`<option value="${a}">${t('years',{n:a})}</option>`).join('')}</select>
+    <div style="display:flex;gap:8px"><button class="btn btn-p btn-sm" id="pf-ok">${t('create')}</button><button class="btn btn-g btn-sm" id="pf-no">${t('cancel')}</button></div>`;
   g.appendChild(f);
   f.querySelector('#pf-nm').focus();
   f.querySelector('#pf-ok').onclick=()=>{const nm=f.querySelector('#pf-nm').value.trim();const age=parseInt(f.querySelector('#pf-age').value)||6;
@@ -868,7 +930,7 @@ async function selP(p){
   cur=p;prog={};(await DB.all('progress')).filter(r=>r.key.startsWith(p.id+'_')).forEach(r=>{prog[r.sid]=r});
   document.getElementById('hav').textContent=p.av;document.getElementById('hnm').textContent=p.nm;
   document.getElementById('hsk').textContent=p.sk||0;
-  show('home');rHome();speak('Bonjour '+p.nm+' !')}
+  show('home');rHome();speak(t('hello',{n:p.nm}))}
 function todayStr(){return new Date().toISOString().slice(0,10)}
 function dayDiff(a,b){return Math.round((new Date(a)-new Date(b))/86400000)}
 async function saveProg(sid,stars,acc,sc){
@@ -903,7 +965,7 @@ function rHome(){
     if(ok){const g=document.createElement('div');g.className='s-grid';
       SONGS.filter(sg=>sg.w===wo.id).filter(sg=>{const age=cur?.age||6;return sg.d<=Math.ceil(age/4)}).forEach(sg=>{const sp=prog[sg.id];
         const c=document.createElement('div');c.className='s-card';
-        c.innerHTML=`<div class="s-title">${esc(sg.t)}</div><div class="s-meta">${sg.c}</div><div class="s-stars">${sp?'⭐'.repeat(sp.stars)+'☆'.repeat(3-sp.stars):'☆☆☆'}</div><div style="display:flex;gap:6px;margin-top:8px"><button class="btn btn-p btn-sm play-btn" aria-label="Jouer ${esc(sg.t)}">▶ Jouer</button><button class="btn btn-s btn-sm listen-btn" aria-label="Écouter ${esc(sg.t)}">🎧</button></div>`;
+        c.innerHTML=`<div class="s-title">${esc(sg.t)}</div><div class="s-meta">${sg.c}</div><div class="s-stars">${sp?'⭐'.repeat(sp.stars)+'☆'.repeat(3-sp.stars):'☆☆☆'}</div><div style="display:flex;gap:6px;margin-top:8px"><button class="btn btn-p btn-sm play-btn" aria-label="${t('play_aria',{s:esc(sg.t)})}">${t('play')}</button><button class="btn btn-s btn-sm listen-btn" aria-label="${t('listen_aria',{s:esc(sg.t)})}">🎧</button></div>`;
         c.querySelector('.play-btn').onclick=(e)=>{e.stopPropagation();startL(sg)};
         c.querySelector('.listen-btn').onclick=(e)=>{e.stopPropagation();listenSong(sg)};
         g.appendChild(c)});s.appendChild(g)}
@@ -968,19 +1030,19 @@ function show(id){
   if(id!=='lesson')Game.stop()}
 
 /* ════ SETTINGS ════ */
-let CFG={lang:'fr',vol:70,cb:false,rm:false,dys:false,focus:false,latency:0};
-async function loadCFG(){const s=await DB.get('settings','cfg');if(s){CFG={...CFG,...s};LG=CFG.lang;Aud.vol(CFG.vol/100);if(CFG.cb)document.body.classList.add('cb');if(CFG.rm)document.body.classList.add('rm');if(CFG.dys)document.body.classList.add('dys');if(CFG.focus)document.body.classList.add('focus')}}
+let CFG={lang:'auto',vol:70,cb:false,rm:false,dys:false,focus:false,latency:0};
+async function loadCFG(){const s=await DB.get('settings','cfg');if(s){CFG={...CFG,...s};setLang();Aud.vol(CFG.vol/100);if(CFG.cb)document.body.classList.add('cb');if(CFG.rm)document.body.classList.add('rm');if(CFG.dys)document.body.classList.add('dys');if(CFG.focus)document.body.classList.add('focus')}}
 function saveCFG(){DB.put('settings',{id:'cfg',...CFG})}
 function rSet(){
   const w=document.getElementById('stw');w.innerHTML='';
-  [{type:'select',lbl:'Langue',opts:[{v:'fr',l:'🇫🇷 Français'},{v:'en',l:'🇬🇧 English'}],cur:CFG.lang,fn:v=>{CFG.lang=v;LG=v;saveCFG();rSet();rHome()}},
-   {type:'range',lbl:'Volume',min:0,max:100,cur:CFG.vol,fn:v=>{CFG.vol=+v;Aud.vol(v/100);saveCFG()}},
-   {type:'toggle',lbl:'Mode daltonien',cur:CFG.cb,fn:v=>{CFG.cb=v;document.body.classList.toggle('cb',v);saveCFG()}},
-   {type:'toggle',lbl:'Animations réduites',cur:CFG.rm,fn:v=>{CFG.rm=v;document.body.classList.toggle('rm',v);saveCFG()}},
-   {type:'toggle',lbl:'Police dyslexie',cur:CFG.dys,fn:v=>{CFG.dys=v;document.body.classList.toggle('dys',v);saveCFG()}},
-   {type:'toggle',lbl:'Mode focus',cur:CFG.focus,fn:v=>{CFG.focus=v;document.body.classList.toggle('focus',v);saveCFG()}},
-   {type:'range',lbl:'Calibration MIDI (ms)',min:-100,max:100,cur:CFG.latency,fn:v=>{CFG.latency=+v;saveCFG()}},
-   {type:'button',lbl:'Plein écran',fn:()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.()}}
+  [{type:'select',lbl:t('lang'),opts:[{v:'auto',l:'🌐 '+t('lang_auto')},{v:'fr',l:'🇫🇷 Français'},{v:'en',l:'🇬🇧 English'}],cur:CFG.lang,fn:v=>{CFG.lang=v;setLang();saveCFG();rSet();rLogin();rHome()}},
+   {type:'range',lbl:t('volume'),min:0,max:100,cur:CFG.vol,fn:v=>{CFG.vol=+v;Aud.vol(v/100);saveCFG()}},
+   {type:'toggle',lbl:t('cb'),cur:CFG.cb,fn:v=>{CFG.cb=v;document.body.classList.toggle('cb',v);saveCFG()}},
+   {type:'toggle',lbl:t('rm'),cur:CFG.rm,fn:v=>{CFG.rm=v;document.body.classList.toggle('rm',v);saveCFG()}},
+   {type:'toggle',lbl:t('dys'),cur:CFG.dys,fn:v=>{CFG.dys=v;document.body.classList.toggle('dys',v);saveCFG()}},
+   {type:'toggle',lbl:t('focus'),cur:CFG.focus,fn:v=>{CFG.focus=v;document.body.classList.toggle('focus',v);saveCFG()}},
+   {type:'range',lbl:t('latency'),min:-100,max:100,cur:CFG.latency,fn:v=>{CFG.latency=+v;saveCFG()}},
+   {type:'button',lbl:t('fs'),fn:()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.()}}
   ].forEach(it=>{
     const r=document.createElement('div');r.className='st-row';r.innerHTML=`<span class="st-lbl">${it.lbl}</span>`;
     if(it.type==='select'){const s=document.createElement('select');s.className='st-sel';it.opts.forEach(o=>{const op=document.createElement('option');op.value=o.v;op.textContent=o.l;if(o.v===it.cur)op.selected=true;s.appendChild(op)});s.onchange=()=>it.fn(s.value);r.appendChild(s)}
@@ -996,12 +1058,12 @@ function rPar(){if(!cur)return;document.getElementById('ps1').textContent=Object
   /* Badges */
   let bw=document.getElementById('badges-w');if(!bw){bw=document.createElement('div');bw.id='badges-w';bw.style.cssText='width:100%;max-width:480px';document.getElementById('pcnt').insertBefore(bw,document.querySelector('#pcnt > div:last-of-type'))}
   bw.innerHTML='<div class="st-title">Badges</div><div style="display:flex;flex-wrap:wrap;gap:8px">'+(cur.badges||[]).map(b=>{const bd=BADGES[b];return bd?`<span class="badge badge-gold">${bd.ic} ${bd[LG]}</span>`:''}).join('')+'</div>';
-  if(!(cur.badges||[]).length)bw.innerHTML+='<p style="color:var(--muted);font-size:13px">Aucun badge pour le moment</p>'}
+  if(!(cur.badges||[]).length)bw.innerHTML+='<p style="color:var(--muted);font-size:13px">'+t('no_badges')+'</p>'}
 
 /* ════ SPEECH ════ */
 let _fv=null;
 function speak(txt){if(!('speechSynthesis' in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(txt);
-  if(!_fv){const vs=speechSynthesis.getVoices();_fv=vs.find(v=>v.name.includes('Amelie')||v.name.includes('Amélie'))||vs.find(v=>v.lang.startsWith('fr')&&v.localService)||vs.find(v=>v.lang.startsWith('fr'))}
+  if(!_fv){const vs=speechSynthesis.getVoices();_fv=(LG==='fr'&&vs.find(v=>v.name.includes('Amelie')||v.name.includes('Amélie')))||vs.find(v=>v.lang.startsWith(LG)&&v.localService)||vs.find(v=>v.lang.startsWith(LG))}
   if(_fv)u.voice=_fv;u.lang=LG==='fr'?'fr-FR':'en-US';u.rate=0.85;u.pitch=1.1;u.volume=0.8;speechSynthesis.speak(u)}
 if('speechSynthesis' in window)speechSynthesis.addEventListener('voiceschanged',()=>{_fv=null});
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
@@ -1019,8 +1081,8 @@ function startBreakTimer(){
   },30000)
 }
 function showBreak(mins){
-  document.getElementById('breakmsg').textContent=`Tu joues depuis ${mins} minutes. Tes yeux et tes doigts ont besoin de repos !`;
-  document.getElementById('breakov').classList.add('on');speak('Petite pause ?')
+  document.getElementById('breakmsg').textContent=t('break_msg',{n:mins});document.getElementById('breakmsg').dataset.n=1;
+  document.getElementById('breakov').classList.add('on');speak(t('break_t'))
 }
 document.getElementById('breakcont').onclick=()=>{document.getElementById('breakov').classList.remove('on');_brkStart=Date.now()};
 document.getElementById('breakstop').onclick=()=>{document.getElementById('breakov').classList.remove('on');Game.stop();show('login');clearInterval(_brkTimer)};
@@ -1060,18 +1122,19 @@ if(typeof ResizeObserver!=='undefined'){
 }
 
 /* ════ EVENTS ════ */
-document.querySelectorAll('.nav-btn').forEach(b=>b.onclick=()=>{show(b.dataset.s);if(b.dataset.s==='home')rHome();if(b.dataset.s==='settings')rSet();if(b.dataset.s==='freeplay')mkPiano('fp',3,2)});
+document.querySelectorAll('.nav-btn').forEach(b=>b.onclick=()=>{show(b.dataset.s);if(b.dataset.s==='home')rHome();if(b.dataset.s==='settings')rSet();if(b.dataset.s==='freeplay'){document.getElementById('odisp').textContent=nd('C'+fpo);mkPiano('fp',fpo,2)}});
 document.getElementById('lbk').onclick=()=>{Game.stop();show('home');rHome()};
 document.getElementById('fbk').onclick=()=>show('home');
 document.querySelectorAll('.spd button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.spd button').forEach(x=>x.classList.remove('on'));b.classList.add('on');Game.setSpd(b.dataset.s)});
 let fpo=3;
 document.getElementById('od').onclick=()=>{fpo=Math.max(2,fpo-1);document.getElementById('odisp').textContent=nd('C'+fpo);mkPiano('fp',fpo,2)};
 document.getElementById('ou').onclick=()=>{fpo=Math.min(6,fpo+1);document.getElementById('odisp').textContent=nd('C'+fpo);mkPiano('fp',fpo,2)};
+document.getElementById('mpill').onclick=()=>Mid.pillTap();
 document.getElementById('hpar').onclick=()=>{show('parent');initPar();document.querySelector('.pin-d')?.focus()};
 document.getElementById('pbk').onclick=()=>{document.getElementById('pov').classList.remove('hidden');document.getElementById('pcnt').classList.add('hidden');show('home')};
 document.getElementById('bex').onclick=async()=>{const d={profiles:await DB.all('profiles'),progress:await DB.all('progress'),v:'2.0'};const b=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='melodino-backup.json';a.click();URL.revokeObjectURL(u)};
 document.getElementById('bim').onclick=()=>document.getElementById('ifile').click();
-document.getElementById('ifile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(d.profiles)for(const p of d.profiles)await DB.put('profiles',p);if(d.progress)for(const p of d.progress)await DB.put('progress',p);await loadP();alert('Import OK!')}catch{alert('Fichier invalide')}};
+document.getElementById('ifile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(d.profiles)for(const p of d.profiles)await DB.put('profiles',p);if(d.progress)for(const p of d.progress)await DB.put('progress',p);await loadP();alert('Import OK!')}catch{alert(t('import_bad'))}};
 Mid.onN.push(i=>{
   Aud.resume();keyOn(i.full);hl(i.full,'hit');
   /* Velocity→brightness: stronger press = brighter LED (LUMI only) */
@@ -1124,12 +1187,13 @@ window.onunhandledrejection=e=>{ErrLog.log('ui','unhandled:'+String(e.reason).sl
 function updateOnlineStatus(){
   let b=document.getElementById('offline-banner');
   if(!navigator.onLine){
-    if(!b){b=document.createElement('div');b.id='offline-banner';b.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;background:var(--gold);color:#1A1005;text-align:center;padding:6px;font-family:var(--fh);font-weight:700;font-size:13px;';b.textContent='⚡ Mode hors ligne — tout fonctionne !';document.body.appendChild(b)}
+    if(!b){b=document.createElement('div');b.id='offline-banner';b.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;background:var(--gold);color:#1A1005;text-align:center;padding:6px;font-family:var(--fh);font-weight:700;font-size:13px;';b.textContent=t('offline');document.body.appendChild(b)}
   }else if(b){b.remove()}
 }
 window.addEventListener('online',updateOnlineStatus);
 window.addEventListener('offline',updateOnlineStatus);
 
+applyLang();
 (async()=>{await ErrLog.init();await DB.init();await loadCFG();await loadP();updateOnlineStatus();if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(e=>ErrLog.log('network','sw-fail',e.message))})();
 </script>
 </body>

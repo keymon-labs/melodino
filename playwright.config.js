@@ -6,6 +6,7 @@ export default defineConfig({
   retries: 1,
   use: {
     baseURL: 'http://127.0.0.1:3000',
+    locale: 'fr-FR', // app auto-detects the browser language; existing specs assert French UI
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
   },

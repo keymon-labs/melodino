@@ -20,7 +20,7 @@
 - **3-star scoring** — Earn stars based on accuracy to unlock new worlds
 
 ### 🌍 Multilingual
-- **French** (default) and **English** fully supported
+- **French** and **English**, auto-detected from your browser's language list (override in Settings; French if neither matches)
 - **Solfege (Do-Re-Mi)** or **Letter names (C-D-E)** — auto-switches by locale
 - Songs from around the world: France, England, Japan, China, and more
 
@@ -33,6 +33,7 @@
 - **Auto-detection** via USB-C — plug and play, zero drivers
 - **LED control** — Next note glows gold, correct = green, incorrect = red
 - **Works with ANY USB MIDI keyboard** — LUMI is optional
+- **Bluetooth MIDI keyboards** — tap the MIDI pill in the header (Chrome on Android/desktop; not iOS Safari)
 - **Computer keyboard** works too — A=C, S=D, D=E, F=F, G=G...
 
 ### 🏆 Gamification
