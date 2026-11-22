@@ -2,9 +2,9 @@ name: CI — Validate & Audit
 
 on:
   push:
-    branches: [main]
+    branches: [deploy-main]
   pull_request:
-    branches: [main]
+    branches: [main, deploy-main]
   workflow_call:
 
 jobs:
