@@ -1,12 +1,11 @@
 name: Dependabot Auto-Merge
+# TODO: manual-only on the fork, the reusable workflow lives in a repo the fork cannot read
 
 on:
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   auto-merge:
-    # TODO: disabled on the fork, the reusable workflow lives in a repo the fork cannot read
-    if: false
     uses: BuilderCed/.github/.github/workflows/reusable-dependabot-auto-merge.yml@main
     permissions:
       contents: write
